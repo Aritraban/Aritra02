@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mobile Photography Portfolio</title>
+    <link rel="icon" href="MOBILE PHOTOGRAPHY.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Aritra's photography</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery" >Gallery</a></li>
+                
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1><strong>🌿 Where nature whispers, the soul listens</strong></h1>
+            <p>Nature beauty photography captures the essence of the natural world through visually stunning images that highlight landscapes, flora, fauna, and natural phenomena. This style of photography emphasizes harmony, color, and detail, often aiming to evoke emotions like awe, peace, and wonder. It typically focuses on elements such as vibrant sunsets, cascading waterfalls, majestic mountains, dense forests, and intricate wildlife close-ups. By blending artistic composition with technical skill, nature beauty photography not only showcases the splendor of the environment but also inspires appreciation and conservation of the natural world</p>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <h2>Portfolio</h2>
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="landscape">Landscapes</button>
+                <button class="filter-btn" data-category="portrait">Portraits</button>
+                <button class="filter-btn" data-category="event">Events</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item landscape">
+                    <img src="p.webp" alt="Mountain">
+                </div>
+                <div class="gallery-item portrait">
+                    <img src="IMG_20250109_171826.jpg" alt="Professional headshot">
+                </div>
+                
+                <div class="gallery-item event">
+                    <img src="images/event1.jpg" alt="Wedding ceremony">
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="booking">
+            <h2>Book a Session</h2>
+            <form class="booking-form" >
+                <div class="form-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Full Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <select id="session-type" required>
+                        <option value="">Select Session Type</option>
+                        <option value="portrait">Portrait Session</option>
+                        <option value="event">Event Coverage</option>
+                        <option value="landscape">Landscape Session</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="date"  required>
+                    <label for="date">Preferred Date</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" required></textarea>
+                    <label for="message">Additional Details</label>
+                </div>
+                <button type="submit" class="submit-btn" action="Conect.py" method="post">Book Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3 class="contact-info-1">Contact Us</h3>
+                <p class="contact-info-2">Email: jonakibanerjee1981@gmail.com</p>
+                <p class="contact-info-3">Phone: 7908457656</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/photography_unknown_69/" class="social-link" target="_blank">Instagram</a>
+                
+                <a href="https://x.com/ARITRABANE0203" class="social-link" target="_blank" >Twitter</a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024  Mobile Photography. All rights reserved.</p>
+    </footer>
+</body>
+</html>
